@@ -5,24 +5,24 @@ import Navbar from "./Navbar";
 import Customers from "./Customers";
 import Login from "./Login";
 import Rentals from "./Rentals";
-import MainPage from "./MainPage";
+//import MainPage from "./MainPage";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-// ReactDOM.render(<Router>
-//     <Navbar/>
-//     <Switch>
-//         <Route path="/customers">
-//             <Customers/>
-//         </Route>
-//         <Route path="/login">
-//             <Login/>
-//         </Route>
-//         <Route path="/rentals">
-//             <Rentals/>
-//         </Route>
-//         <Route path="/">
-//             <App/>
-//         </Route>
-//     </Switch>
-// </Router>, document.getElementById("root"));
-ReactDOM .render(<MainPage/>,document.querySelector("#root"));
+ReactDOM.render(<Router>
+    <Navbar/>
+    <Switch>
+        <Route path="/customers">
+            <Customers/>
+        </Route>
+        <Route path="/login">
+            <Login/>
+        </Route>
+        <Route path="/rentals">
+            <Rentals/>
+        </Route>
+        <Route path="/">
+            <App/>
+        </Route>
+    </Switch>
+</Router>, document.getElementById("root"));
+//ReactDOM .render(<MainPage/>,document.querySelector("#root"));
